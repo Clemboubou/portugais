@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
-import { db, Vocabulary, markWordAsLearned } from '../services/database';
+import { db, markWordAsLearned } from '../services/database';
+import type { Vocabulary } from '../services/database';
 import { useUserStore } from './userStore';
 import { useModuleStore } from './moduleStore';
 import { translateText, getExampleSentences } from '../services/apiService';

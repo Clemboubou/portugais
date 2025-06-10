@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
-import { db, UserProgress, updateUserProgress, incrementStreakDays } from '../services/database';
+import { db, updateUserProgress, incrementStreakDays } from '../services/database';
+import type { UserProgress } from '../services/database';
 
 export const useUserStore = defineStore('user', {
   state: () => ({

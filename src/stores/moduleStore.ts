@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
-import { db, Module, updateModuleProgress } from '../services/database';
+import { db, updateModuleProgress } from '../services/database';
+import type { Module } from '../services/database';
 
 export const useModuleStore = defineStore('modules', {
   state: () => ({

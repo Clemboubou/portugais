@@ -1,4 +1,7 @@
-import Dexie, { Table } from 'dexie';
+import Dexie from 'dexie';
+
+// Alternative import pour Table qui fonctionne avec les versions récentes de Dexie
+type Table<T> = Dexie.Table<T, number>;
 
 // Define interfaces for our database models
 export interface Vocabulary {

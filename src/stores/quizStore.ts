@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
-import { db, Quiz } from '../services/database';
+import { db } from '../services/database';
+import type { Quiz } from '../services/database';
 import { useVocabularyStore } from './vocabularyStore';
 import { useModuleStore } from './moduleStore';
 
